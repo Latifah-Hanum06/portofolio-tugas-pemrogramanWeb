@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeri Kegiatan | Latifah Hanum</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 25px;
+            background-color: #333333;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555555;
+        }
+
+        .aktif {
+            background-color: brown;
+        }
+
+        h1 {
+            color: brown;
+        }
+
+        .deskripsi {
+            line-height: 1.7;
+        }
+
+        .galeri {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .kartu-kegiatan {
+            background-color: #fafafa;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px #dddddd;
+        }
+
+        .kartu-kegiatan img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .isi-kartu {
+            padding: 15px;
+        }
+
+        .isi-kartu h3 {
+            color: brown;
+            margin-top: 0;
+        }
+
+        .isi-kartu p {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .video-box {
+            margin-top: 35px;
+            padding: 20px;
+            background-color: #fff3e6;
+            border-left: 5px solid brown;
+        }
+
+        video {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: 15px auto;
+            background-color: black;
+            border-radius: 8px;
+        }
+
+        .catatan {
+            color: #666666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #dddddd;
+            text-align: center;
+            color: #666666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Menu Navigasi -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Beranda</a>
+                </li>
+
+                <li>
+                    <a href="tentang.html">Tentang Saya</a>
+                </li>
+
+                <li>
+                    <a href="kontak.html">Kontak</a>
+                </li>
+
+                <li>
+                    <a class="aktif" href="galeri.html">Galeri Kegiatan</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Galeri Kegiatan</h1>
+
+        <p class="deskripsi">
+            Berikut adalah beberapa kegiatan yang saya lakukan dalam
+            proses belajar dan mengembangkan kemampuan di bidang
+            teknologi informasi.
+        </p>
+
+        <!-- Kumpulan Foto Kegiatan -->
+        <div class="galeri">
+
+            <!-- Kegiatan 1 -->
+            <div class="kartu-kegiatan">
+                <img
+                    src="images/seminar.jpeg"
+                    alt="Kegiatan Seminar Sensasi Vol.3"
+                >
+
+                <div class="isi-kartu">
+                    <h3>Seminar</h3>
+
+                    <p>
+                        Kegiatan seminar vol. 3
+                        menambah wawasan yang lebih luas
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kegiatan 2 -->
+            <div class="kartu-kegiatan">
+                <img
+                    src="images/membuat-apk-mobile.jpeg"
+                    alt="Kegiatan belajar di kampus"
+                >
+
+                <div class="isi-kartu">
+                    <h3>Kegiatan Belajar di Kampus</h3>
+
+                    <p>
+                        Kegiatan belajar, mengerjakan tugas projek.
+                        Mata kuliah Mobile Programming
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kegiatan 3 -->
+            <div class="kartu-kegiatan">
+                <img
+                    src="images/mendaki.jpeg"
+                    alt="Aktivitas/Hobby"
+                >
+
+                <div class="isi-kartu">
+                    <h3>Aktivitas yang disukai</h3>
+
+                    <p>
+                        Kegiatan bersosialisasi dan
+                        wujud kecintaan terhadap alam
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bagian Video -->
+        <div class="video-box">
+            <h2>Video Pengabdian Kepada Masyarakat</h2>
+
+            <video controls autoplay loop muted>
+                <source
+                    src="vidios/kegiatan-pkm.mp4"
+                    type="video/mp4"
+                >
+
+                Browser Anda tidak mendukung pemutaran video.
+            </video>
+
+            <p class="catatan">
+                Video di atas adalah dokumentasi atau video edukasi kegiatan
+                pengabdian kepada masyarakat yang dilakukan mahasiswa semester 5 sistem informasi
+                Universitas Pamulang Serang.
+            </p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Latifah Hanum | Website Pribadi</p>
+        </footer>
+
+    </div>
+</body>
+</html>

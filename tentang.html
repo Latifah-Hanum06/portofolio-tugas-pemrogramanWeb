@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tentang Saya | Latifah Hanum</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 25px;
+            background-color: #333333;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555555;
+        }
+
+        .aktif {
+            background-color: brown;
+        }
+
+        h1 {
+            color: brown;
+        }
+
+        h2 {
+            color: #444444;
+            border-bottom: 2px solid brown;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        ol {
+            line-height: 1.8;
+        }
+
+        .profil-box {
+            background-color: #fff3e6;
+            padding: 20px;
+            border-left: 5px solid brown;
+            line-height: 1.7;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #cccccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff3e6;
+        }
+
+        tr:hover {
+            background-color: #f5d6c6;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #dddddd;
+            text-align: center;
+            color: #666666;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 15px;
+            }
+
+            .container {
+                padding: 18px;
+            }
+
+            nav ul li {
+                display: block;
+            }
+
+            nav ul li a {
+                text-align: center;
+            }
+
+            th,
+            td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Menu Navigasi -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Beranda</a>
+                </li>
+
+                <li>
+                    <a class="aktif" href="tentang.html">Tentang Saya</a>
+                </li>
+
+                <li>
+                    <a href="kontak.html">Kontak</a>
+                </li>
+
+                <li>
+                    <a href="galeri.html">Galeri Kegiatan</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Isi Halaman Tentang Saya -->
+        <h1>Tentang Saya</h1>
+
+        <div class="profil-box">
+            <p>
+                Nama saya <b>Latifah Hanum</b>. Saya adalah mahasiswa Semester
+                5, Program Studi Sistem Informasi yang memiliki minat dalam
+                bidang teknologi informasi dan pembuatan website.
+            </p>
+
+            <p>
+                Saya senang mempelajari hal-hal baru, terutama
+                <i>HTML, CSS, JavaScript, dan pengembangan aplikasi</i>.
+                Saya ingin meningkatkan kemampuan agar dapat membuat
+                website yang menarik, bermanfaat, dan mudah digunakan.
+            </p>
+        </div>
+
+        <!-- Rencana Pengembangan Diri -->
+        <h2>Rencana Pengembangan Diri</h2>
+
+        <ol>
+            <li>Mempelajari HTML dan CSS lebih mendalam.</li>
+            <li>Mengembangkan kemampuan JavaScript.</li>
+            <li>Membuat website yang interaktif dan responsif.</li>
+            <li>Mempelajari framework Flutter.</li>
+        </ol>
+
+        <!-- Tabel Jadwal Kuliah -->
+        <h2>Jadwal Kuliah</h2>
+
+        <p>
+            Saya merupakan mahasiswa kelas Sabtu.Pada semester ini berikut adalah jadwal
+            mata kuliah yang saya ikuti:
+        </p>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Mata Kuliah</th>
+                    <th>Hari</th>
+                    <th>Waktu</th>
+                    <th>Ruang</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Audit Sistem Informasi</td>
+                    <td>Sabtu</td>
+                    <td>07.40 - 09.20 WIB</td>
+                    <td>Ruang Kelas B.612</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Manajemen Sains</td>
+                    <td>Sabtu</td>
+                    <td>09.20 - 11.00 WIB</td>
+                    <td>Ruang Kelas B.612</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Pengantar Ekonomi, Manajemen & Bisnis</td>
+                    <td>Sabtu</td>
+                    <td>13.50 - 15.30 WIB</td>
+                    <td>Ruang Kelas B.612</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Perencanaan Sumber Daya Perusahaan</td>
+                    <td>Sabtu</td>
+                    <td>16.00 - 17.40 WIB</td>
+                    <td>Ruang Kelas B.612</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Latifah Hanum | Website Pribadi</p>
+        </footer>
+
+    </div>
+</body>
+</html>
